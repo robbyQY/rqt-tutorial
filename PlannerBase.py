@@ -188,6 +188,15 @@ class PlanBase(object):
             print(e)
 
     def preprocess_depth(self, depth):
+        """
+        Return a list of random ingredients as strings.
+    
+        :param depth: Optional "kind" of ingredients.
+        :type depth: list[str] or None
+        :raise lumache.InvalidKindError: If the depth is invalid.
+        :return: The preprocessed depth.
+        :rtype: None
+        """        
         depth = np.minimum(depth, 20000)
         dim = (self.config.img_width, self.config.img_height)
         depth = cv2.resize(depth, dim)
@@ -444,15 +453,6 @@ class PlanBase(object):
             self.n_times_expert += 1
 
     def _generate_plan(self, _timer):
-    """
-    Return a list of random ingredients as strings.
-
-    :param kind: Optional "kind" of ingredients.
-    :type kind: list[str] or None
-    :raise lumache.InvalidKindError: If the kind is invalid.
-    :return: The ingredients list.
-    :rtype: None
-    """        
         if (self.image is None) or \
                 (not self.net_initialized) or \
                 (not self.reference_initialized) or \
