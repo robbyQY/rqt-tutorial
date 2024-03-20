@@ -16,9 +16,9 @@ To use agile_autonomy, launch it in terminal:
 key functions
 ----------------
 
-To run inference and obtain trajectories, you can use ``PlannerBase._generate_plan()`` function:
+To run inference and obtain trajectories, you can use ``PlannerBase.preprocess_depth()`` function:
 
-.. autofunction:: PlannerBase.PlanBase._generate_plan
+.. autofunction:: PlannerBase.preprocess_depth
 
 The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
 or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
