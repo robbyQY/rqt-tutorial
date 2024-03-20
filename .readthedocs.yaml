@@ -10,6 +10,7 @@ python:
     - requirements: docs/requirements.txt
     - method: pip
       path: .
+      myst_parser
 
 sphinx:
   configuration: docs/source/conf.py
