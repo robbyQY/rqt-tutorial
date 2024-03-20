@@ -18,7 +18,7 @@ key functions
 
 To run inference and obtain trajectories, you can use ``PlannerBase.preprocess_depth()`` function:
 
-.. autofunction:: PlannerBase.preprocess_depth
+.. autofunction:: PlannerBase.PlanBase.preprocess_depth
 
 The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
 or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
