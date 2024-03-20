@@ -6,19 +6,19 @@ Usage
 Installation
 ------------
 
-To use agile_autonomy, launch it in terminal:
+To use Lumache, first install it using pip:
 
 .. code-block:: console
 
-   $ source devel/setup.bash
-   $ roslaunch agile_autonomy simulation.launch
+   (.venv) $ pip install lumache
 
-key functions
+Creating recipes
 ----------------
 
-To run inference and obtain trajectories, you can use ``PlannerBase.preprocess_depth()`` function:
+To retrieve a list of random ingredients,
+you can use the ``lumache.get_random_ingredients()`` function:
 
-.. autofunction:: PlannerBase.preprocess_depth
+.. autofunction:: lumache.get_random_ingredients
 
 The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
 or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
@@ -31,4 +31,3 @@ For example:
 >>> import lumache
 >>> lumache.get_random_ingredients()
 ['shells', 'gorgonzola', 'parsley']
-
