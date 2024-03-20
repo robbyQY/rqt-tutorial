@@ -18,7 +18,7 @@ key functions
 
 To run inference and obtain trajectories, you can use ``PlannerBase._generate_plan()`` function:
 
-.. autofunction:: PlannerBase._generate_plan
+.. autofunction:: PlannerBase.PlanBase._generate_plan
 
 The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
 or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
