@@ -6,13 +6,14 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+To use agile_autonomy, launch it in terminal:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   $ source devel/setup.bash
+   $ roslaunch agile_autonomy simulation.launch
 
-Creating recipes
+key functions
 ----------------
 
 To retrieve a list of random ingredients,
